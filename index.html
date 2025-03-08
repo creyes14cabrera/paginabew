@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Amor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Modal de ingreso de nombre -->
+  <div id="login-overlay">
+    <div class="login-container">
+      <h2>Ingresa tu nombre</h2>
+      <input type="text" id="name-input" placeholder="Escribe tu nombre">
+      <button onclick="checkName()">Entrar</button>
+      <p id="error-msg"></p>
+    </div>
+  </div>
+
+  <!-- Fondo decorativo con el nombre -->
+  <div class="background-text">VALERIE BARROS</div>
+
+  <!-- Banner con mensaje grande -->
+  <div id="banner">
+    <h1>Feliz día a la mejor mujer del mundo</h1>
+  </div>
+
+  <!-- Galería de imágenes -->
+  <div class="gallery">
+    <div class="image-container">
+      <img src="imagen1.JPG" alt="Imagen 1">
+      <button onclick="showMessage(0)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen2.JPG" alt="Imagen 2">
+      <button onclick="showMessage(1)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen3.jpg" alt="Imagen 3">
+      <button onclick="showMessage(2)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen4.JPG" alt="Imagen 4">
+      <button onclick="showMessage(3)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen5.JPG" alt="Imagen 5">
+      <button onclick="showMessage(4)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen6.jpg" alt="Imagen 6">
+      <button onclick="showMessage(5)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen7.jpg" alt="Imagen 7">
+      <button onclick="showMessage(6)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen8.jpg" alt="Imagen 8">
+      <button onclick="showMessage(7)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen99.jpg" alt="Imagen 9">
+      <button onclick="showMessage(8)">Detallar</button>
+    </div>
+    <div class="image-container">
+      <img src="imagen10.jpg" alt="Imagen 10">
+      <button onclick="showMessage(9)">Detallar</button>
+    </div>
+  </div>
+
+  <!-- Caja de mensajes emergentes -->
+  <div id="message-box" class="hidden">
+    <p id="message-text"></p>
+    <button onclick="closeMessage()">Cerrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
